@@ -1,0 +1,11 @@
+<div class="content">
+  <div class="form">
+    <input type="text" placeholder="Nom" [(ngModel)]="name">
+    <input type="text" placeholder="Cadeau" [(ngModel)]="gift">
+    <div class="containerBtn">
+      <button class="btn" (click)="sendList()" [innerHTML]="'Envoyer au père noël'"></button>
+      <button [routerLink]="['']" class="btn" [innerHTML]="'Retour aux listes'"></button>
+    </div>
+
+  </div>
+</div>

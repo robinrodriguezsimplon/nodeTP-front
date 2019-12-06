@@ -1,0 +1,11 @@
+<div class="content">
+  <div *ngFor="let wishlist of wishlists" class="item">
+    <div class="itemInterieur">
+      <p [innerHTML]="wishlist.name"></p>
+      <p [innerHTML]="wishlist.gift"></p>
+      <p (click)="delete(wishlist._id)">[X]</p>
+    </div>
+    <hr>
+  </div>
+  <button [routerLink]="['/create']" class="btn" [innerHTML]="'Créer ma liste'"></button>
+</div>

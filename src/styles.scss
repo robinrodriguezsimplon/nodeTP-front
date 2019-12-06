@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+.content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .item {
+        width: 30%;
+        .itemInterieur{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.btn {
+    margin: 30px 10px;
+    background: rgb(108, 109, 145);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(64, 64, 150);
+    color: white;
+    text-transform: uppercase;
+}
